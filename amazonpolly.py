@@ -7,7 +7,7 @@ def pollytext(filename,pollyvoice):
 
 
 
-    with open(filename) as file:
+    with open(filename, encoding='utf-8') as file:
         text = file.read()
 
     polly_client = boto3.Session(
